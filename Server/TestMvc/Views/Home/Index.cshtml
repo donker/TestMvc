@@ -1,0 +1,17 @@
+@inherits TestMvcWebPage
+@using Bring2mind.TestMvc.TestMvc.Common
+@{
+  TestMvcModuleContext.AddModuleScript();
+}
+
+<h1>Hello TestMvc Module</h1>
+
+<div class="Bring2mindTestMvc TestMvc"
+     data-locale="@System.Threading.Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName"
+     data-moduleid="@Dnn.ActiveModule.ModuleID"
+     data-tabid="@Dnn.ActiveModule.TabID"
+     data-portalid="@Dnn.PortalSettings.PortalId"
+     data-resources="@SerializedResources()"
+     data-security="@(Newtonsoft.Json.JsonConvert.SerializeObject(TestMvcModuleContext.Security))"
+     >
+</div>

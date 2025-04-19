@@ -1,0 +1,48 @@
+{
+  "name": "Bring2mind.TestMvc",
+  "projectType": "module",
+  "friendlyName": "TestMvc Module",
+  "description": "Bring2mind TestMvc Module",
+  "packageName": "Bring2mind_TestMvc",
+  "folder": "MVC/Bring2mind/TestMvc",
+  "iconFile": "DesktopModules\\MVC\\Bring2mind\\TestMvc\\icon.png",
+  "module": {
+    "azureCompatible": "true",
+    "moduleName": "Bring2mind_TestMvc",
+    "foldername": "Bring2mind/TestMvc",
+    "businessControllerClass": "Bring2mind.TestMvc.TestMvc.Common.ModuleController, BRING2MIND.TESTMVC.TESTMVC",
+    "supportedFeatures": ["Portable"],
+    "moduleDefinitions": [
+      {
+        "friendlyName": "Bring2mind TestMvc",
+        "defaultCacheTime": 0,
+        "moduleControls": [
+          {
+            "controlSrc": "Bring2mind.TestMvc.TestMvc.Controllers/Home/Index.mvc",
+            "supportsPartialRendering": "False",
+            "controlTitle": "TestMvc",
+            "controlType": "View",
+            "viewOrder": 0
+          },
+          {
+            "controlKey": "Settings",
+            "controlSrc": "Bring2mind.TestMvc.TestMvc.Controllers/Settings/Settings.mvc",
+            "supportsPartialRendering": "False",
+            "controlTitle": "TestMvc Settings",
+            "controlType": "Edit",
+            "viewOrder": 0
+          }
+        ],
+        "permissions": [
+          { "code": "Bring2mind_TestMvc_MODULE", "key": "CANDO", "name": "Does Stuff" }
+        ]
+      }
+    ]
+  },
+  "pathsAndFiles": {
+    "pathToAssemblies": "./bin",
+    "pathToScripts": "./Server/SqlScripts",
+    "assemblies": ["Bring2mind.TestMvc.TestMvc.dll"],
+    "excludeFilter": ["TestMvc/bin/", "TestMvc/obj/"]
+  }
+}

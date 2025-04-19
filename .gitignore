@@ -1,0 +1,7 @@
+.vs
+bin
+obj
+Releases
+*.suo
+*.user
+tools

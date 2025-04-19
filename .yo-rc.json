@@ -1,0 +1,25 @@
+{
+  "generator-dotnetnuke": {
+    "promptValues": {
+      "projType": "mvc",
+      "dnnVersion": "10.0.0",
+      "npm": true,
+      "projectname": "TestMvc",
+      "projectdescription": "TestMvc module",
+      "yourname": "Peter Donker",
+      "email": "peter@bring2mind.net",
+      "companyfull": "Bring2mind",
+      "companyshort": "Bring2mind",
+      "companyUrl": "bring2mind.net",
+      "dnnHost": "http://dnndev.me",
+      "dnnRoot": "DL/",
+      "namespace": "Bring2mind.TestMvc",
+      "Name": "TestMvc",
+      "Namespace": "Bring2mind.TestMvc.TestMvc"
+    },
+    "Company": "Bring2mind",
+    "Project": "TestMvc",
+    "Namespace": "Bring2mind.TestMvc",
+    "Solution": "Bring2mind.TestMvc"
+  }
+}
